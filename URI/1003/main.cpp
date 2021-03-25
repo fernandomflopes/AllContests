@@ -4,14 +4,11 @@ using namespace std;
 
 int main() {
 
-    int a, b, r;
+    int a, b;
 
     cin >> a >> b;
 
-    r = a + b;
-
-    cout << "SOMA = " << r << endl;
-
+    cout << "SOMA = " << (a + b) << endl;
 
     return 0;
 }
