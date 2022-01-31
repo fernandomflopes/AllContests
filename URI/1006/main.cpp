@@ -13,4 +13,5 @@ int main() {
     printf("MEDIA = %.1lf\n", media);
 
     return 0;
+    //
 }
