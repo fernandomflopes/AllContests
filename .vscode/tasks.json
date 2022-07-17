@@ -20,6 +20,10 @@
 			],
 			"group": "build",
 			"detail": "compilador: /usr/bin/g++-7"
+		}, 
+		{
+			"label": "Task2",
+			"command": "./URI/1244/main < URI/1244/in00"
 		}
 	]
 }
