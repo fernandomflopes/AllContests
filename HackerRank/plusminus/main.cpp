@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <functional>
+#include <iomanip>
 
 using namespace std;
 
@@ -27,9 +28,15 @@ void plusMinus(vector<int> arr) {
         return i < 0;
     });
 
-        
+    int zero = counter(arr, [](int i) {
+        return i == 0;
+    });    
 
-    std::cout << positivo << " " << negativo << endl;
+    double div = arr.size();
+
+    std::cout << setprecision(6) << fixed << positivo / div << endl;
+    std::cout << setprecision(6) << fixed << negativo / div << endl;
+    std::cout << setprecision(6) << fixed << zero / div << endl;
 
 }
 
@@ -39,6 +46,8 @@ int main() {
     vector<int> arr;
     arr.push_back(1);    
     arr.push_back(1);    
+    arr.push_back(0);    
+    arr.push_back(-1);    
     arr.push_back(-1);    
 
     plusMinus(arr);
